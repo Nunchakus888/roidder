@@ -7,7 +7,7 @@
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <link rel="alternate" media="handheld" href="#" />
     <meta charset="utf-8">
-    <title>张矫-架构师/全栈工程师/web-developer</title>
+    <title>张矫-架构师/全栈工程师/前端专家</title>
     <meta content="full-stack-developer" name="description">
     <meta content="web全栈，full stack，CTO、智能合约，全栈工程师，nodejs"
           name="keywords">
@@ -591,7 +591,7 @@
         <div class="basic-info">
             <div class="basic-name-area">
                 <p class="basic-name female">张矫（jiǎo）</p>
-                <i class="icon-sex icon-sex__male"></i>
+<!--                <i class="icon-sex icon-sex__male"></i>-->
             </div>
             <p>
                 <span class="basic-company">商汤科技</span>
@@ -631,11 +631,11 @@
             <div class="per-self_des">
                 <ul>
                     <li>熟悉Java、GoLang、Python 等开发语言</li>
-                    <li>熟悉分布式、microservices、DDD、k8s 等技术</li>
+                    <li>熟悉分布式架构、microservices、k8s 等技术</li>
                     <li>熟悉Mysql、NoSql等常用数据库开发</li>
                     <li>熟悉 Vue、React、Angular等主流 Web 框架，熟悉webpack、vite等构建工具</li>
                     <li>熟悉 Electron、Flutter、小程序等跨端方案</li>
-                    <li>精通Javascript、NodeJs、web生态主流技术</li>
+                    <li>精通Javascript、NodeJs、web生态技术</li>
                     <li>精益求精、完美主义、使命必达</li>
                 </ul>
             </div>
@@ -672,8 +672,8 @@
                 <div class="exp-list_content">
                     <ul>
 
-                        <li>负责事业部SAAS业务（AI-游戏控制台-bot产品）从0-1的技术选型、架构设计、交互方案制定，交付维护，服务稳定性保障等</li>
-                        <li>AIGC产品（miaohua/chat-notion/chat-pdf）微服务技术选型、业务拆分、容器化管理方案实施</li>
+                        <li>负责事业部SAAS业务（AI-游戏控制台-bot产品）web端从0-1的技术选型、架构设计</li>
+                        <li>AIGC产品（miaohua/chat-notion/chat-pdf）微服务技术架构设计、业务拆分、容器化管理方案实施</li>
                         <li>AIGC产品跨平台技术方案制定：小程序、electron、web</li>
                         <li>负责公司人才招聘，人才储备，长期OKR制定</li>
                         <li>企业级web业务技术生态建设</li>
@@ -775,7 +775,7 @@
                 <p class="exp-list_title">
                     <span class="exp-project_name">Bytesprint</span>
                 </p>
-                <p class="exp-list_time">2023.09-2023.11</p>
+                <p class="exp-list_time">2023.09-2023.12</p>
                 <div class="exp-project_des">
                     <p>
                         基于web3的全球化IT众包服务平台 <br/>
@@ -803,17 +803,38 @@
                         miaohua.sensetime.com <br/>
                         公司（商汤）创新性项目，根据prompt（文本描述）通过AI模型能力生成对应图片<br>
                         前端：nextjs、 tailwindcss <br>
-                        后端：spring-cloud、Python、Nodejs、Nginx、k8s + 推理服务（算法团队） <br>
+                        后端：Go、Python、Nodejs、Nginx、k8s + 推理服务（算法团队） <br>
                     </p>
                 </div>
                 <div class="exp-list_content">
                     <ol>
                         <li>web工程建设从0-1，团队组建从0-1，用户规模从0-10000+</li>
-                        <li>微服务分层设计，身份认证服务、文生图服务、模型管理服务、存储服务、监控日志服务、API网关等</li>
-                        <li>负载均衡、服务吞吐、QPS优化</li>
-                        <li>交互方案设计，数据结构、通信方案制定</li>
+                        <li>微服务分层设计，身份认证服务、文生图服务、模型管理服务、存储服务、任务推送务等</li>
+                        <li>负载均衡、RPC通信方案制定、监控系统搭建、服务吞吐、QPS优化</li>
                         <li>客户端采用Nodejs SSR渲染方案，首屏加载<0.9s</li>
                         <li>响应式设计，设备屏幕宽度从320px～1600px都有最佳适配</li>
+                    </ol>
+                </div>
+            </li>
+
+
+            <li class="pro-exp_list">
+                <p class="exp-list_title">
+                    <span class="exp-project_name">Trust-AI</span>
+                </p>
+                <p class="exp-list_time">2023.04-2023.08</p>
+                <div class="exp-project_des">
+                    <p>
+                        pdf分析工具，汇总pdf摘要信息，可根据当前文档语境做快速问答交互<br>
+                        web、electron客户端支持 <br>
+                        技术栈：electron、reactJs、tailwindcss <br>
+                    </p>
+                </div>
+                <div class="exp-list_content">
+                    <ol>
+                        <li>monorepo仓库管理web、electron应用，组件化多端复用</li>
+                        <li>跨进程事件总线设计、首屏性能优化</li>
+                        <li>electron架构设计、开发、打包</li>
                     </ol>
                 </div>
             </li>
@@ -827,7 +848,7 @@
                     <p>
                         背景：启动新项目、重大版本迭代等，都需要重新开发登录注册相关功能，且不同业务的登录注册逻辑有差异，导致重复开发，维护成本高<br>
                         沉淀企业级单点登录服务，解耦业务逻辑，切换数据库即可实现不同业务的接入<br>
-                        项目技术栈：nextjs + prisma（orm） + postgres + jwt
+                        项目技术栈：nextjs + prisma（orm） + mysql + jwt
                     </p>
                 </div>
                 <div class="exp-list_content">
@@ -862,7 +883,7 @@
         </div>
         <ol class="edu-exp_group">
             <li class="edu-exp_list">
-                <p class="exp-list_time">2019.09-至今</p>
+                <p class="exp-list_time">2020.09-至今</p>
                 <div class="exp-list_top">
                     <img src="images/sjtu-logo.png" alt="学校Logo">
                     <div class="exp-list_right">
@@ -881,7 +902,6 @@
                     </div>
                 </div>
             </li>
-        </ol>
     </div>
     <!-- /教育经历 -->
 
@@ -891,6 +911,5 @@
     <!-- 图片作品 -->
     <!-- /图片作品 -->
 </div>
-<!--    <script type="text/javascript" crossorigin="anonymous" src="https://www.lagou.com/upload/oss.js?v=1010"></script></body>-->
 
 </html>
