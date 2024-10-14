@@ -594,6 +594,8 @@
 <!--                <i class="icon-sex icon-sex__male"></i>-->
             </div>
             <p>
+                <span class="basic-company">大模型</span>
+                <span> / </span>
                 <span class="basic-company">AI数据标注</span>
                 <span> / </span>
                 <span class="basic-job">全栈工程师</span>
@@ -630,11 +632,11 @@
         <div class="per-self_content">
             <div class="per-self_des">
                 <ul>
-                    <li>全面的全栈开发技能，精通web开发，熟悉 NodeJs、Python、掌握简单的 PyTorch 模型训练</li>
-                    <li>负责 Shinemo（迅盟科技） AI 数据标注平台开发设计，支持音视频、图文标注，AI 自动标注</li>
-                    <li>负责 Sensetime AIGC战略级项目：miaohua文生图应用web工程从0-1落地</li>
-                    <li>熟悉容器化解决方案，常见组件，微服务应用编排等</li>
-                    <li>熟悉 django、FastAPI 等 python 生态技术、熟悉常见 SQL、NoSQL的应用</li>
+                    <li>全面的软件工程全栈开发技能，精通web开发，熟悉 NodeJs、Python、掌握简单的 PyTorch 模型训练</li>
+                    <li>负责 Shinemo（迅盟科技） AI 数据标注平台开发设计，支持音视频、图片识别标注，AI 自动标注</li>
+                    <li>负责 Sensetime AIGC战略级项目：miaohua文生图应用 web 工程从0-1落地，推理服务部署维护</li>
+                    <li>熟悉容器化解决方案Docker、Kubernetes，常见组件，微服务应用编排等</li>
+                    <li>熟悉 Django、FastAPI 等 python 生态技术、熟悉常见 SQL、NoSQL的应用</li>
                 </ul>
             </div>
         </div>
@@ -649,7 +651,7 @@
         </div>
         <ol class="work-exp_group">
             <li class="work-exp_list">
-                <p class="exp-list_time">2023.09-2024.10</p>
+                <p class="exp-list_time">2024.05-2024.11</p>
                 <div class="exp-list_top">
                     <a href="https://www.shinemo.com/shinemo-office" target="_blank">
                       <img src="https://saas.uban360.com/statics/config/favicon.ico" alt="shinemo">
@@ -670,13 +672,14 @@
                 </div>
                 <div class="exp-list_content">
                     <ul>
-                        <li>负责公司数据标注平台开发，设计，模型训练，模型服务部署</li>
+                        <li>负责公司数据标注平台开发，设计，模型训练，模型服务serverless，容器化</li>
+                        <li>通过手动标注数据-提供给模型训练-输出模型-部署推理服务-自动生成标注数据-准确性校验/纠正-优化模型</li>
                     </ul>
                 </div>
             </li>
 
             <li class="work-exp_list">
-                <p class="exp-list_time">2021.09-2023.09</p>
+                <p class="exp-list_time">2021.09-2024.05</p>
                 <div class="exp-list_top">
                     <a href="https://sensetime.com/" target="_blank">
                       <img src="https://static.sensetime.com/images/logo.png" alt="sensetime">
@@ -701,7 +704,7 @@
                     <ul>
                         <li>负责事业部SAAS业务（AI-游戏控制台-bot产品）web工程从0-1的技术选型、架构设计</li>
                         <li>AIGC产品（miaohua/chat-notion/trust-AI）微服务技术架构设计、业务拆分、容器化管理、devops方案实施</li>
-                        <li>基于stable diffusion model，API服务部署，model IO formatting，prompt提示优化</li>
+                        <li>基于stable diffusion，API服务部署，model IO formatting，prompt提示优化</li>
                         <li>AIGC产品跨平台技术方案制定：小程序、web/h5</li>
                         <li>企业级web业务生态建设，沉淀单点登录服务，业务组件库，CI/CD等开发基建</li>
                         <li>web应用极致性能优化，跨平台低端设备秒开、网站 TPS 优化等</li>
@@ -710,7 +713,7 @@
             </li>
 
             <li class="work-exp_list">
-                <p class="exp-list_time">2020.07-2021.07</p>
+                <p class="exp-list_time">2020.07-2021.08</p>
                 <div class="exp-list_top">
                     <img src="https://gw.alicdn.com/tfs/TB11_n_fq67gK0jSZFHXXa9jVXa-1280-533.png_200x200.jpg" alt="公司Logo">
                     <div class="exp-list_right">
@@ -822,23 +825,26 @@
         <ol class="pro-exp_group">
             <li class="pro-exp_list">
                 <p class="exp-list_title">
-                    <span class="exp-project_name">HitoX</span>
+                    <a href="http://120.220.95.183:20007/" target="_blank">
+                        <span class="exp-project_name">HitoX</span>
+                    </a>
                 </p>
-                <p class="exp-list_time">2023.09-2024.10</p>
+                <p class="exp-list_time">2024.05-2024.11</p>
                 <div class="exp-project_des">
                     <p>
                         AI 数据标注平台 <br/>
                         前端：ReactJs + canvas <br/>
                         后端：Django、redies（job queue）、postgresql、traefik、nuclio <br/>
+                        LLM：PyTorch、YOLO、Whisper、Qwen2、groundingdino、face_landmarker <br/>
                         编排：docker-compose<br/>
                     </p>
                 </div>
                 <div class="exp-list_content">
                     <ol>
+                        <li>Django 微服务开发，标注数据导入导出、任务系统，日志系统，模型服务系统</li>
+                        <li>通过 nuclio 管理模型服务，模型服务函数化，可指定在CPU/GPU上运行，资源配额等</li>
+                        <li>YOLO模型训练，视觉检测、分类，人脸识别、视频对象检测模型服务部署</li>
                         <li>web标注工具开发、设计，1:1 还原推理服务结果输出</li>
-                        <li>Django 微服务开发，标注数据导入导出、任务系统，日志系统</li>
-                        <li>通过 nuclio 管理模型服务serverless化，可使函数指定在CPU/GPU上运行</li>
-                        <li>YOLO模型训练，视觉检测、分类等</li>
                     </ol>
                 </div>
             </li>
@@ -849,12 +855,12 @@
                       <span class="exp-project_name">miaohua</span>
                     </a>
                 </p>
-                <p class="exp-list_time">2022.10-2023.09</p>
+                <p class="exp-list_time">2022.10-2024.05</p>
                 <div class="exp-project_des">
                     <p>
                         公司（商汤）创新性项目，根据prompt（文本描述）通过自研模型生成对应图片<br>
                         前端：React、 tailwindcss、Nginx <br>
-                        后端：FastApi + PyTorch + stable diffusion model<br>
+                        后端：FastApi + PyTorch + Stable Diffusion 2.1 + Docker<br>
                     </p>
                 </div>
                 <div class="exp-list_content">
@@ -869,50 +875,6 @@
                 </div>
             </li>
 
-
-            <li class="pro-exp_list">
-                <p class="exp-list_title">
-                    <span class="exp-project_name">Trust-AI</span>
-                </p>
-                <p class="exp-list_time">2023.08-2023.09</p>
-                <div class="exp-project_des">
-                    <p>
-                        pdf分析工具，汇总pdf摘要信息，可根据当前文档语境做快速问答交互<br>
-                        web、electron客户端支持 <br>
-                        前端：electron、reactJs、tailwindcss <br>
-                        后端：FastApi、Langchain <br>
-                    </p>
-                </div>
-                <div class="exp-list_content">
-                    <ol>
-                        <li>基于Langchain 的 Agent应用，prompt模版预设、QA边际情况处理</li>
-                        <li>知识库 retrieval、问答记录持久化处理</li>
-                        <li>客户端 monorepo仓库管理web、electron应用，一码多端</li>
-                    </ol>
-                </div>
-            </li>
-
-            <li class="pro-exp_list">
-                <p class="exp-list_title">
-                    <span class="exp-project_name">auth单点登录</span>
-                </p>
-                <p class="exp-list_time">2023.04-2023.07</p>
-                <div class="exp-project_des">
-                    <p>
-                        背景：启动新项目、重大版本迭代等，都需要重新开发登录注册相关功能，且不同业务的登录注册逻辑有差异，导致重复开发，维护成本高<br>
-                        沉淀企业级单点登录服务，解耦业务逻辑，category区分可实现不同业务的接入<br>
-                        项目技术栈：nextjs + prisma（orm） + mysql + jwt
-                    </p>
-                </div>
-                <div class="exp-list_content">
-                    <ol>
-                        <li>组件化UI+数据库读写能力</li>
-                        <li>jwt认证</li>
-                        <li>用户身份实名认证服务、验证码机制</li>
-                        <li>企业级单点登录服务</li>
-                    </ol>
-                </div>
-            </li>
 
             <li class="pro-exp_list">
                 <p class="exp-list_title">
